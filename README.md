@@ -8,7 +8,10 @@ This is my implementation of the session about creating a local development envi
 
 This repository is based on the openui5-basic-template-app and has already implemented the CORS anywhere proxy.
 
-The following text is from the original README.md:
+The following text is from the original README.md except the following:
+
+* git clone statement, which was changed to this repository
+* added npm run proxy statement 
 
 # openui5-basic-template-app
 OpenUI5 basic template app using the UI5 Build and Development Tooling. You can use it as a starting point to build custom OpenUI5 apps.
@@ -26,12 +29,17 @@ For installation instructions please see [Installing the UI5 CLI](https://github
 ## Setup
 1. Clone the repository and navigate into it
     ```sh
-    git clone https://github.com/SAP/openui5-basic-template-app.git
+    git clone https://github.com/mattxdev/openui5-basic-local-app
     cd openui5-basic-template-app
     ```
 1. Install all dependencies
     ```sh
     npm install
+    ```
+
+1. Start a local CORS anywhere proxy server (http://0.0.0.0:8081/)
+    ```sh
+    npm run proxy
     ```
 
 1. Start a local server and run the application (http://localhost:8080/index.html)
